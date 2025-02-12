@@ -10,6 +10,14 @@ Why GraphQL?
 <br/>
 <br/>
 
+GraphQL Dashboard
+<br/>
+<br/>
+![image](https://github.com/user-attachments/assets/b37e8c01-c6a7-4e69-8da5-8d261ba7bf91)
+
+<br/>
+<br/>
+
 findAll: input: `NA` output: `List<Player>` 
 <br/>
 <br/>
@@ -26,9 +34,14 @@ findOne: input: `id` output: `Optional<Player>`
 <br/>
 <br/>
 
-GraphQL Dashboard
+create: input: `name`, `team` output: `Player`
+<br/>
+update: input: `id`, `name`, `team` output: `Player`
+<br/>
+delete: input: `id` output: `Player`
 <br/>
 <br/>
-![image](https://github.com/user-attachments/assets/b37e8c01-c6a7-4e69-8da5-8d261ba7bf91)
+![image](https://github.com/user-attachments/assets/e9361ce0-fb9e-4210-ac33-c63195638a24)
+
 
 

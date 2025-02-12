@@ -1,10 +1,11 @@
 # GraphQLDemo
-GraphQL with Spring
+### GraphQL with Spring
 
 <br/>
 <br/>
 
-Why GraphQL? - When same API is used by different clients it gives same output for every client in case of REST. But instead if a particular client need some different kind of output using the same API (e.g. An API is producing response with 3 parameters, one client says I don't need the first parameter, only the last 2 needed), in that case GraphQL is used. By changing the output parameters in query we allow multiple clients using same API get different output, as per their requirements.
+Why GraphQL? 
+- When same API is used by different clients it gives same output for every client in case of REST. But instead if a particular client need some different kind of output using the same API (e.g. An API is producing response with 3 parameters, one client says I don't need the first parameter, only the last 2 needed), in that case GraphQL is used. By changing the output parameters in query we allow multiple clients using same API get different output, as per their requirements.
 
 <br/>
 <br/>

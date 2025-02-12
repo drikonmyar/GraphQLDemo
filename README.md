@@ -23,3 +23,11 @@ findOne: input: `id` output: `Optional<Player>`
 <br/>
 ![image](https://github.com/user-attachments/assets/b63bd51e-05bd-48b0-8ea1-228a0de2ba9d)
 
+<br/>
+<br/>
+GraphQL Dashboard
+<br/>
+<br/>
+![image](https://github.com/user-attachments/assets/b37e8c01-c6a7-4e69-8da5-8d261ba7bf91)
+
+

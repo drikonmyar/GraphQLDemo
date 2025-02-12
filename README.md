@@ -25,6 +25,7 @@ findOne: input: `id` output: `Optional<Player>`
 
 <br/>
 <br/>
+
 GraphQL Dashboard
 <br/>
 <br/>

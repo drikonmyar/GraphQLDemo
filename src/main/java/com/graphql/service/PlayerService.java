@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 import java.util.concurrent.atomic.AtomicInteger;
 
 @Service
@@ -27,6 +28,10 @@ public class PlayerService {
 
     public List<Player> findAll(){
         return players;
+    }
+
+    public Optional<Player> findOne(Integer id){
+        return players.stream().filter(player -> player.id().equals(id)).findFirst();
     }
 
 }

@@ -34,4 +34,30 @@ public class PlayerService {
         return players.stream().filter(player -> player.id().equals(id)).findFirst();
     }
 
+    public Player create(String name, Team team){
+        Player player = new Player(atomicInteger.incrementAndGet(), name, team);
+        players.add(player);
+        return player;
+    }
+
+    public Player delete(Integer id){
+        Player player = players.stream().filter(p -> p.id().equals(id)).findFirst().orElseThrow(() -> new IllegalArgumentException("Invalid id: " + id));
+        players.remove(player);
+        return player;
+    }
+
+    public Player update(Integer id, String name, Team team){
+        Player updatedPlayer = new Player(id, name, team);
+        Optional<Player> optionalPlayer = players.stream().filter(p -> p.id().equals(id)).findFirst();
+        if(optionalPlayer.isPresent()){
+            Player player = optionalPlayer.get();
+            int index = players.indexOf(player);
+            players.set(index, updatedPlayer);
+        }
+        else{
+            throw new IllegalArgumentException("Invalid Player");
+        }
+        return updatedPlayer;
+    }
+
 }
